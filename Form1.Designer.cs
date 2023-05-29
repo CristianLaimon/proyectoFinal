@@ -31,96 +31,105 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.botonMostrar = new System.Windows.Forms.Button();
+            this.botonAgregar = new System.Windows.Forms.Button();
+            this.botonBorrar = new System.Windows.Forms.Button();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtApellido = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(120, 67);
+            this.label1.Location = new System.Drawing.Point(109, 57);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 15);
+            this.label1.Size = new System.Drawing.Size(54, 15);
             this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.label1.Text = "Nombre:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(120, 96);
+            this.label2.Location = new System.Drawing.Point(109, 98);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 15);
+            this.label2.Size = new System.Drawing.Size(54, 15);
             this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
+            this.label2.Text = "Apellido:";
             // 
             // listBox1
             // 
+            this.listBox1.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 15;
-            this.listBox1.Location = new System.Drawing.Point(105, 281);
+            this.listBox1.Location = new System.Drawing.Point(12, 190);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(557, 94);
+            this.listBox1.Size = new System.Drawing.Size(557, 109);
             this.listBox1.TabIndex = 2;
             // 
-            // button1
+            // botonMostrar
             // 
-            this.button1.Location = new System.Drawing.Point(561, 61);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.botonMostrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.botonMostrar.Location = new System.Drawing.Point(368, 34);
+            this.botonMostrar.Name = "botonMostrar";
+            this.botonMostrar.Size = new System.Drawing.Size(75, 38);
+            this.botonMostrar.TabIndex = 3;
+            this.botonMostrar.Text = "Mostrar";
+            this.botonMostrar.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // botonAgregar
             // 
-            this.button2.Location = new System.Drawing.Point(561, 93);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.botonAgregar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.botonAgregar.Location = new System.Drawing.Point(368, 79);
+            this.botonAgregar.Name = "botonAgregar";
+            this.botonAgregar.Size = new System.Drawing.Size(75, 38);
+            this.botonAgregar.TabIndex = 4;
+            this.botonAgregar.Text = "Agregar";
+            this.botonAgregar.UseVisualStyleBackColor = true;
+            this.botonAgregar.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // botonBorrar
             // 
-            this.button3.Location = new System.Drawing.Point(561, 122);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.botonBorrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.botonBorrar.Location = new System.Drawing.Point(368, 123);
+            this.botonBorrar.Name = "botonBorrar";
+            this.botonBorrar.Size = new System.Drawing.Size(75, 38);
+            this.botonBorrar.TabIndex = 5;
+            this.botonBorrar.Text = "Borrar";
+            this.botonBorrar.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txtNombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(164, 64);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 23);
-            this.textBox1.TabIndex = 6;
+            this.txtNombre.Location = new System.Drawing.Point(183, 57);
+            this.txtNombre.MaxLength = 20;
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(100, 23);
+            this.txtNombre.TabIndex = 6;
             // 
-            // textBox2
+            // txtApellido
             // 
-            this.textBox2.Location = new System.Drawing.Point(164, 93);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 23);
-            this.textBox2.TabIndex = 7;
+            this.txtApellido.Location = new System.Drawing.Point(183, 98);
+            this.txtApellido.MaxLength = 100;
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new System.Drawing.Size(100, 23);
+            this.txtApellido.TabIndex = 7;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(584, 311);
+            this.Controls.Add(this.txtApellido);
+            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.botonBorrar);
+            this.Controls.Add(this.botonAgregar);
+            this.Controls.Add(this.botonMostrar);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -131,10 +140,10 @@
         private Label label1;
         private Label label2;
         private ListBox listBox1;
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private Button botonMostrar;
+        private Button botonAgregar;
+        private Button botonBorrar;
+        private TextBox txtNombre;
+        private TextBox txtApellido;
     }
 }
